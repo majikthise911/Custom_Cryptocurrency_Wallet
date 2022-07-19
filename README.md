@@ -1,6 +1,4 @@
-## Unit 19 Homework: Cryptocurrency Wallet
-
-![An image shows a wallet with bitcoin.](Images/19-4-challenge-image.png)
+## Cryptocurrency Wallet
 
 ### Background
 
@@ -8,7 +6,7 @@ You work at a startup that is building a new and disruptive platform called Fint
 
 In this Challenge, you will complete the code that enables your customers to send cryptocurrency payments to fintech professionals. To develop the code and test it out, you will assume the perspective of a Fintech Finder customer who is using the application to find a fintech professional and pay them for their work.
 
-### What You're Creating
+### Creating
 
 To complete this Challenge, you will use two Python files, both of which are contained in the starter folder.
 
@@ -116,6 +114,3 @@ Now it's time to put it all together and test the Fintech Finder application wit
 
 * Submit the link to your GitHub repo on Bootcamp Spot.
 
----
-
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
