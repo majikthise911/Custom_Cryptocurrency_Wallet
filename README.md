@@ -107,7 +107,7 @@ Now it's time to put it all together and test the Fintech Finder application wit
 ---
 
 ![alt=""](Images/Screenshot%202022-07-21%20102544.png)
-![alt=""](Images/Screenshot%202022-07-21%20102600.png
+![alt=""](Images/Screenshot%202022-07-21%20102600.png)
 ![alt=""](Images/Screenshot%202022-07-21%20102611.png)
 ![alt=""](Images/Screenshot%202022-07-21%20102628.png)
 ![alt=""](Images/Screenshot%202022-07-21%20102641.png)
