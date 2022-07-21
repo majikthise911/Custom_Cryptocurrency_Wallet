@@ -1,11 +1,7 @@
 # Cryptocurrency Wallet
 
 ################################################################################
-# For this Challenge, you will assume the perspective of a Fintech Finder
-# customer in order to do the following:
-
-# * Generate a new Ethereum account instance by using your mnemonic seed phrase
-# (which you created earlier in the module).
+# * Generate a new Ethereum account instance by using your mnemonic seed phrase from Ganache.
 
 # * Fetch and display the account balance associated with your Ethereum account
 # address.
@@ -44,9 +40,9 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # Complete the following steps:
 
 # 1. Review the code contained in the `crypto_wallet.py` script file. Note that
-# the Ethereum transaction functions that you have built throughout this
-# module-including `wallet`, `wallet.derive_acount`, `get_balance`, `fromWei`,
-# `estimateGas`, `sendRawTransaction`, and others&mdash;have now been
+# the Ethereum transaction functions
+#  `wallet`, `wallet.derive_acount`, `get_balance`, `fromWei`,
+# `estimateGas`, `sendRawTransaction`, and others&mdash;have been
 # incorporated into Python functions that allow you to automate the process of
 # accessing them.
 
@@ -79,7 +75,7 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # @TODO:
 # From `crypto_wallet.py import the functions generate_account, get_balance,
 #  and send_transaction
-# YOUR CODE HERE
+from crypto_wallet import generate_account, get_balance, send_transaction
 
 ################################################################################
 # Fintech Finder Candidate Information
@@ -130,7 +126,7 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 # @TODO:
 #  Call the `generate_account` function and save it as the variable `account`
-# YOUR CODE HERE
+account = generate_account()
 
 ##########################################
 
@@ -141,12 +137,14 @@ st.sidebar.write(account.address)
 # Step 1 - Part 5:
 # Define a new `st.sidebar.write` function that will display the balance of the
 # customer’s account. Inside this function, call the `get_balance` function and
-#  pass it your Ethereum `account.address`.
+# pass it your Ethereum `account.address`.
 
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-# YOUR CODE HERE
+st.sidebar.write(get_balance(w3, account.address))  # st.sidebar.write tells python to write the returned value of get_balance to the sidebar
+                                                    # we then pass the w3 variable and the account.address variable to get_balance
+
 
 ##########################################
 
@@ -237,11 +235,11 @@ st.sidebar.markdown("## Total Wage in Ether")
 # Calculate total `wage` for the candidate by multiplying the candidate’s hourly
 # rate from the candidate database (`candidate_database[person][3]`) by the
 # value of the `hours` variable
-# YOUR CODE HERE
+wage = candidate_database[person][3] * hours
 
 # @TODO
 # Write the `wage` calculation to the Streamlit sidebar
-# YOUR CODE HERE
+st.sidebar.write(wage)
 
 ##########################################
 # Step 2 - Part 2:
@@ -268,7 +266,7 @@ if st.sidebar.button("Send Transaction"):
     # Call the `send_transaction` function and pass it 3 parameters:
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
-    # YOUR CODE HERE
+    transaction_hash = send_transaction(w3, account, candidate_address, wage)
 
     # Markdown for the transaction hash
     st.sidebar.markdown("#### Validated Transaction Hash")

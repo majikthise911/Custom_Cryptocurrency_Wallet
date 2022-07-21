@@ -1,7 +1,9 @@
 # Cryptocurrency Wallet
 ################################################################################
 
-# This file contains the Ethereum transaction functions. By using import statements, integrate this `crypto_wallet.py` Python script into the Fintech Finder interface program that is found in the `fintech_finder.py` file.
+# This file contains the Ethereum transaction functions. By using import statements, 
+# integrate this `crypto_wallet.py` Python script into the Fintech Finder interface program 
+# that is found in the `fintech_finder.py` file.
 
 ################################################################################
 # Imports

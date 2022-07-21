@@ -2,21 +2,19 @@
 
 ### Background
 
-You work at a startup that is building a new and disruptive platform called Fintech Finder. Fintech Finder is an application that its customers can use to find fintech professionals from among a list of candidates, hire them, and pay them. As Fintech Finder’s lead developer, you have been tasked with integrating the Ethereum blockchain network into the application in order to enable your customers to instantly pay the fintech professionals whom they hire with cryptocurrency.
+This repo exists to create an application that its customers can use to find fintech professionals from among a list of candidates, hire them, and pay them. Here we will integrate the Ethereum blockchain network into the application in order to enable customers to instantly pay the fintech professionals whom they hire with cryptocurrency.
 
-In this Challenge, you will complete the code that enables your customers to send cryptocurrency payments to fintech professionals. To develop the code and test it out, you will assume the perspective of a Fintech Finder customer who is using the application to find a fintech professional and pay them for their work.
+To develop the code and test it out, the perspective is assumed of a Fintech Finder customer who is using the application to find a fintech professional and pay them for their work.
 
 ### Creating
 
-To complete this Challenge, you will use two Python files, both of which are contained in the starter folder.
+The first file is called `fintech_finder.py`. It contains the code associated with the web interface of the application. The code included in this file is compatible with the Streamlit library. 
 
-The first file that you will use is called `fintech_finder.py`. It contains the code associated with the web interface of your application. The code included in this file is compatible with the Streamlit library. You will write all of your code for this Challenge in this file.
-
-The second file that you will use is called `crypto_wallet.py`. This file contains the Ethereum transaction functions that you have created throughout this module’s lessons. By using import statements, you will integrate the `crypto_wallet.py` Python script into the Fintech Finder interface program that is found in the `fintech_finder.py` file.
+The second file is called `crypto_wallet.py`. This file contains the Ethereum transaction functions. By using import statements, we integrate the `crypto_wallet.py` Python script into the Fintech Finder interface program that is found in the `fintech_finder.py` file.
 
 Integrating these two files will allow you to automate the tasks associated with generating a digital wallet, accessing Ethereum account balances, and signing and sending transactions via a personal Ethereum blockchain called Ganache.
 
-Specifically, you will assume the perspective of a Fintech Finder customer in order to do the following:
+Goals: 
 
 * Generate a new Ethereum account instance by using the mnemonic seed phrase provided by Ganache.
 
@@ -40,13 +38,13 @@ The steps for this challenge are broken out into the following sections:
 
 #### Step 1: Import Ethereum Transaction Functions into the Fintech Finder Application
 
-In this section, you'll import several functions from the `crypto_wallet.py` script into the file `fintech_finder.py`, which contains code for Fintech Finder’s customer interface, in order to add wallet operations to the application. For this section, you will assume the perspective of a Fintech Finder customer (i.e., you’ll provide your Ethereum wallet and account information to the application).
+In this section, import several functions from the `crypto_wallet.py` script into the file `fintech_finder.py`, which contains code for Fintech Finder’s customer interface, in order to add wallet operations to the application. For this section, assume the perspective of a Fintech Finder customer (i.e., you’ll provide your Ethereum wallet and account information to the application).
 
 Complete the following steps:
 
 1. Review the code contained in the `crypto_wallet.py` script file. Note that the Ethereum transaction functions that you have built throughout this module&mdash;including `wallet`, `wallet.derive_acount`, `get_balance`, `fromWei`, `estimateGas`, `sendRawTransaction`, and others&mdash;have now been incorporated into Python functions that allow you to automate the process of accessing them.
 
-2. Add your mnemonic seed phrase (provided by Ganache) to the starter code’s `SAMPLE.env` file. When the information has been added, rename the file `.env`.
+2. Add mnemonic seed phrase (provided by Ganache) to the `SAMPLE.env` file. When the information has been added, rename the file `.env`.
 
 3. Open the `fintech_finder.py` file. Toward the top of the file, after the import statements that are provided, import the following functions from the `crypto_wallet.py` file:
 
@@ -108,9 +106,8 @@ Now it's time to put it all together and test the Fintech Finder application wit
 
 ---
 
-## Submission
-
-* Upload the files for this assignment to your GitHub repository.
-
-* Submit the link to your GitHub repo on Bootcamp Spot.
-
+![alt=""](Images/Screenshot%202022-07-21%20102544.png)
+![alt=""](Images/Screenshot%202022-07-21%20102600.png
+![alt=""](Images/Screenshot%202022-07-21%20102611.png)
+![alt=""](Images/Screenshot%202022-07-21%20102628.png)
+![alt=""](Images/Screenshot%202022-07-21%20102641.png)
