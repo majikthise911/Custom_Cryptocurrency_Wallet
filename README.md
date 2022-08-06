@@ -42,7 +42,7 @@ In this section, import several functions from the `crypto_wallet.py` script int
 
 Complete the following steps:
 
-1. Review the code contained in the `crypto_wallet.py` script file. Note that the Ethereum transaction functions that you have built throughout this module&mdash;including `wallet`, `wallet.derive_acount`, `get_balance`, `fromWei`, `estimateGas`, `sendRawTransaction`, and others&mdash;have now been incorporated into Python functions that allow you to automate the process of accessing them.
+1.Note that the Ethereum transaction functions that you have built throughout this module&mdash;including `wallet`, `wallet.derive_acount`, `get_balance`, `fromWei`, `estimateGas`, `sendRawTransaction`, and others&mdash;have now been incorporated into Python functions that allow you to automate the process of accessing them.
 
 2. Add mnemonic seed phrase (provided by Ganache) to the `SAMPLE.env` file. When the information has been added, rename the file `.env`.
 
@@ -56,13 +56,9 @@ Complete the following steps:
 
 4. Within the Streamlit sidebar section of code, create a variable named `account`. Set this variable equal to a call on the `generate_account` function. This function will create the Fintech Finder customer’s (in this case, your) HD wallet and Ethereum account.
 
-5. Within this same section of the `fintech_finder.py` file, define a new `st.sidebar.write` function that will display the balance of the customer’s account. Inside this function, call the `get_balance` function and pass it your Ethereum `account.address`.
+5. Define a new `st.sidebar.write` function that will display the balance of the customer’s account. Inside this function, call the `get_balance` function and pass it your Ethereum `account.address`.
 
 #### Step 2: Sign and Execute a Payment Transaction
-
-Next, you'll write the code that will calculate a fintech professional’s wage, in ether, based on the worker’s hourly rate and the number of hours that they work for a customer. (The fintech professionals’ hourly rates are provided in the `candidate_database` that is found in `fintech_finder.py`.)
-
-You will then write code that uses the calculated wage value to send a transaction that pays the worker. This code should allow the Fintech Finder customer to authorize the transaction with their digital signature. For the purpose of testing out this application, you will use your own Ethereum account information as the customer account information.
 
 To accomplish all of this, complete the following steps:
 
@@ -92,17 +88,17 @@ Now it's time to put it all together and test the Fintech Finder application wit
 
 2. To launch the Streamlit application, type `streamlit run fintech_finder.py`.
 
-3. On the resulting webpage, select a candidate that you would like to hire from the appropriate drop-down menu. Then, enter the number of hours that you would like to hire them for. (Remember, you do not have a lot of ether in your account, so you cannot hire them for long!)
+3. On the resulting webpage, select a candidate that you would like to hire from the appropriate drop-down menu. Then, enter the number of hours that you would like to hire them for. 
 
 4. Click the Send Transaction button to sign and send the transaction with your Ethereum account information. Navigate to the Transactions section of Ganache.
 
-    * Take a screenshot of your address balance and history on Ganache. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
+    * Take a screenshot of your address balance and history on Ganache. 
 
-    * Take a screenshot of the transaction details on Ganache. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
+    * Take a screenshot of the transaction details on Ganache. 
 
 5. Return to the original transaction, and click the transaction’s To address.
 
-* Take a screenshot of the recipient’s address balance and history from your Ganache application. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
+* Screenshot of the recipient’s address balance and history from your Ganache application. 
 
 ---
 
